@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "posts/01-intro.html",
+    "href": "posts/01-intro.html",
+    "title": "Introduzione a PyTorch",
+    "section": "",
+    "text": "Introduzione\nPyTorch è una delle librerie più usate per il deep learning.\nimport torch\nx = torch.tensor([1, 2, 3])\nx"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Il mio blog AI",
+    "section": "",
+    "text": "Benvenuto nel mio blog!\nQui troverai i miei studi su AI e Machine Learning."
+  }
+]
