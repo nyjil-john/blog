@@ -1,0 +1,22 @@
+/* css styles */
+.quarto-title-meta {
+    margin-bottom: 45px; /* Adjust spacing between metadata and content */
+}
+/* Rende il testo principale più scuro per migliorare la leggibilità */
+body {
+    color: #222 !important;  /* Quasi nero, ma non troppo aggressivo */
+}
+
+/* Migliora la leggibilità dei link */
+a {
+    color: #222 !important;  
+}
+
+a:hover {
+    color: #505050 !important;  /* Un blu più scuro al passaggio del mouse */
+}
+
+/* Scurisce leggermente la barra superiore */
+.navbar {
+    background-color: #f2f2f2 !important;  /* Un grigio chiaro ma più scuro dello sfondo */
+}

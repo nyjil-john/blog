@@ -1,0 +1,23 @@
+---
+toc: false
+image: temporary.JPG
+about: 
+  template: jolla
+  links:
+    - icon: instagram
+      text: Instagram
+      href: https://www.instagram.com/giovi.arackal/
+    - icon: github
+      text: Github
+      href: https://github.com/nyjil-john
+---
+
+# About me
+
+I'm Nyjil, a Computer Engineering student at PoliMi, exploring AI and Machine Learning.
+
+Blogging to document my journey :)
+
+### What I'm doing now
+
+Learning the basics of PyTorch and Machine Learning.
