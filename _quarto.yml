@@ -8,16 +8,13 @@ website:
       - about.qmd
       - icon: github
         href: https://github.com/nyjil-john
-        
-output-dir: docs
 
 format:
   html:
-    theme:
-      - cosmo
-      
+    theme: cosmo
     css: styles.css
     toc: true
 
 editor: visual
 
+output-dir: docs

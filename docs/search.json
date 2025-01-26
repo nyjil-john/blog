@@ -2,22 +2,29 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About me",
     "section": "",
-    "text": "About this site"
+    "text": "About me\nI’m Nyjil, a Computer Engineering student at PoliMi, exploring AI and Machine Learning.\nBlogging to document my journey :)\n\nWhat I’m doing now\nLearning the basics of PyTorch and Machine Learning."
   },
   {
-    "objectID": "posts/01-intro.html",
-    "href": "posts/01-intro.html",
-    "title": "Introduzione a PyTorch",
+    "objectID": "posts/post_1/FinalRadioDecay.html",
+    "href": "posts/post_1/FinalRadioDecay.html",
+    "title": "Linear Regression and Nitrogen-16 Radioactive Decay",
     "section": "",
-    "text": "Introduzione\nPyTorch è una delle librerie più usate per il deep learning.\nimport torch\nx = torch.tensor([1, 2, 3])\nx"
+    "text": "Nitrogen-16 is a short-lived radioactive isotope that decays into Oxygen-16 through beta decay. It’s commonly found in nuclear reactors and has a half-life of 7.13 seconds.\nRadioactive decay follows an exponential curve, but we can apply logarithmic transformation to make it linear so that we can use linear regression to work with the data.\nLet’s start with importing all the necessary libraries:\nimport torch\nfrom torch import nn\nimport matplotlib.pyplot as plt\nTranslating the mathematical formula into Python code:\nhalf_life = 7.13\ndecay_constant = torch.log(torch.tensor(2.0)) / half_life # λ = ln(2) / half-life (by definition)\ntime = torch.arange(0, 60, 1).unsqueeze(1) # let's pick a timeframe of 60 seconds\nA0 = 100 # initial activity (100%)\n\nradioactivity = A0 * torch.exp(-decay_constant * time) # exponential form\nlog_radio = torch.log(radioactivity) # linear form (applied .log)"
+  },
+  {
+    "objectID": "posts/post_1/FinalRadioDecay.html#license",
+    "href": "posts/post_1/FinalRadioDecay.html#license",
+    "title": "Linear Regression and Nitrogen-16 Radioactive Decay",
+    "section": "License",
+    "text": "License\n\n\n\n\n\n\nMIT License\n\n\n\n\n\nMIT License\nCopyright (c) 2021 Daniel Bourke\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Il mio blog AI",
+    "title": "Welcome to my blog!",
     "section": "",
-    "text": "Benvenuto nel mio blog!\nQui troverai i miei studi su AI e Machine Learning."
+    "text": "Welcome to my blog!\nThis blog is just my personal space to track my learning and explore topics I enjoy.\nIt’s not meant for teaching, and there might be mistakes along the way. Just a collection of experiments and notes for myself ;)\n \n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLinear Regression and Nitrogen-16 Radioactive Decay\n\n\n\n\n\n\nAI\n\n\nMachine Learning\n\n\nPyTorch\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nNyjil Arackal\n\n\n\n\n\n\nNo matching items"
   }
 ]
