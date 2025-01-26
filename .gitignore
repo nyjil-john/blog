@@ -1,0 +1,5 @@
+/.quarto/
+blog_env
+_site/
+.ipynb_checkpoints/
+.DS_Store
