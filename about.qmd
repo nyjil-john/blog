@@ -14,10 +14,10 @@ about:
 
 # About me
 
-I'm Nyjil, a Computer Engineering student at PoliMi, exploring AI and Machine Learning.
+I'm Nyjil, a Computer Engineering student at PoliMi, exploring AI and Machine / Deep Learning.
 
 Blogging to document my journey :)
 
 ### What I'm doing now
 
-Learning the basics of PyTorch and Machine Learning.
+Learning the basics of PyTorch and Machine / Deep Learning.

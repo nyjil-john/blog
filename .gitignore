@@ -1,5 +1,15 @@
+# checkpoints
 /.quarto/
-blog_env
-_site/
 .ipynb_checkpoints/
+# local environments
+blog_env
+venv/
+.venv/
+# using docs
+/_site/
+# OS junk
 .DS_Store
+# R session stuff
+*.RData
+*.Rhistory
+.Rproj.user

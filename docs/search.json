@@ -4,7 +4,21 @@
     "href": "about.html",
     "title": "About me",
     "section": "",
-    "text": "About me\nI’m Nyjil, a Computer Engineering student at PoliMi, exploring AI and Machine Learning.\nBlogging to document my journey :)\n\nWhat I’m doing now\nLearning the basics of PyTorch and Machine Learning."
+    "text": "About me\nI’m Nyjil, a Computer Engineering student at PoliMi, exploring AI and Machine / Deep Learning.\nBlogging to document my journey :)\n\nWhat I’m doing now\nLearning the basics of PyTorch and Machine / Deep Learning."
+  },
+  {
+    "objectID": "posts/post_2/BreastCancer.html",
+    "href": "posts/post_2/BreastCancer.html",
+    "title": "Breast Cancer Classification with PyTorch",
+    "section": "",
+    "text": "Breast cancer is one of the most prevalent forms of cancer and early detection plays a crucial role in patient outcomes. In this project, we leverage deep learning with PyTorch to classify tumors as benign (0) or malignant (1) using the Breast Cancer Wisconsin dataset.\nThrough data preprocessing, neural network modeling, and performance evaluation, we create a model that achieves a 98.25% accuracy in detecting malignancies."
+  },
+  {
+    "objectID": "posts/post_2/BreastCancer.html#license",
+    "href": "posts/post_2/BreastCancer.html#license",
+    "title": "Breast Cancer Classification with PyTorch",
+    "section": "License",
+    "text": "License\nCover image by Kjpargeter\n\n\n\n\n\n\nMIT License\n\n\n\n\n\nMIT License\nCopyright (c) 2021 Daniel Bourke\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
   },
   {
     "objectID": "posts/post_1/FinalRadioDecay.html",
@@ -25,6 +39,6 @@
     "href": "index.html",
     "title": "Welcome to my blog!",
     "section": "",
-    "text": "Welcome to my blog!\nThis blog is just my personal space to track my learning and explore topics I enjoy.\nIt’s not meant for teaching, and there might be mistakes along the way. Just a collection of experiments and notes for myself ;)\n \n \n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nLinear Regression and Nitrogen-16 Radioactive Decay\n\n\n\n\n\n\nAI\n\n\nMachine Learning\n\n\nPyTorch\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nNyjil Arackal\n\n\n\n\n\n\nNo matching items"
+    "text": "Welcome to my blog!\nThis blog is just my personal space to track my learning and explore topics I enjoy.\nIt’s not meant for teaching, and there might be mistakes along the way. Just a collection of experiments and notes for myself ;)\n \n \n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nBreast Cancer Classification with PyTorch\n\n\n\n\n\n\nAI\n\n\nDeep Learning\n\n\nPyTorch\n\n\nHealthcare\n\n\n\n\n\n\n\n\n\nFeb 1, 2025\n\n\nNyjil Arackal\n\n\n\n\n\n\n\n\n\n\n\n\nLinear Regression and Nitrogen-16 Radioactive Decay\n\n\n\n\n\n\nAI\n\n\nMachine Learning\n\n\nPyTorch\n\n\nPhysics\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nNyjil Arackal\n\n\n\n\n\n\nNo matching items"
   }
 ]
