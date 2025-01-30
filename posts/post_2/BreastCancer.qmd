@@ -2,7 +2,7 @@
 title: "Breast Cancer Classification with PyTorch"
 format: html
 author: "Nyjil Arackal"
-date: "2025-02-1"
+date: "2025-01-30"
 categories: [AI, Deep Learning, PyTorch, Healthcare]
 image: "post2_cover.jpg"
 ---
