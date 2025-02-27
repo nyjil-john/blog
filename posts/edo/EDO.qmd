@@ -1,0 +1,76 @@
+---
+title: "EDO"
+format: html
+draft: True
+---
+
+## Types of Differential Equations
+
+**Note**: we will consider the interval $I\subseteq \mathbb{R} \to \mathbb{R}$ of definition of $x$.
+
+### **Separable Differential Equations**
+
+A **separable differential equation** is of the form:
+
+$$
+\frac{dy}{dx} = h(x) g(y)\\
+h: I_1 \subseteq \mathbb{R} \to \mathbb{R}, \quad g: I_2 \subseteq \mathbb{R} \to \mathbb{R}
+$$ which we can rewrite as:
+
+$$
+\frac{dy}{g(y)} = h(x) dx
+$$
+
+We can now integrate both sides.
+
+It is also important to check for **constant solutions** (since these solutions won’t appear in the general integral), which occur when:
+
+$$
+g(y) = 0
+$$
+
+------------------------------------------------------------------------
+
+### **First-Order Linear Differential Equations**
+
+A **first-order linear differential equation** has the form:
+
+$$
+\frac{dy}{dx} = a(x)y + b(x)
+$$
+
+If $b(x) = 0$, then the equation is **homogeneous**.
+
+#### **Solution Formula:**
+
+$$
+y(x) = e^{A(x)} \left( \int b(x) e^{-A(x)} dx + C \right)
+$$
+
+where $A(x)$ is the integral of $a(x)$:
+
+$$
+A(x) = \int a(x) dx
+$$
+
+------------------------------------------------------------------------
+
+## **Second-Order Linear Differential Equations**
+
+A **second-order linear differential equation** is written as:
+
+$$
+a(x) \frac{d^2y}{dx^2} + b(x) \frac{dy}{dx} + c(x)y = f(x)
+$$
+
+If *f(x) = 0*, then the equation is **homogeneous**:
+
+$$
+a(x) \frac{d^2y}{dx^2} + b(x) \frac{dy}{dx} + c(x)y = 0
+$$
+
+Solutions to these equations depend on the characteristic equation:
+
+$$
+ar^2 + br + c = 0
+$$

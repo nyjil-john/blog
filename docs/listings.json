@@ -2,8 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/post_2/BreastCancer.html",
-      "/posts/post_1/FinalRadioDecay.html"
+      "/posts/post_3/pneumonia-detection.html",
+      "/posts/post_2/breast-cancer.html",
+      "/posts/post_1/radioactive-decay.html"
     ]
   }
 ]

@@ -8,23 +8,27 @@ image: "post2_cover.jpg"
 ---
 
 ### Introduction
+
 Breast cancer is one of the most prevalent forms of cancer and **early detection** plays a crucial role in patient outcomes. In this project, we leverage deep learning with PyTorch to classify tumors as **benign (0)** or **malignant (1)** using the Breast Cancer Wisconsin dataset.
 
 Through data preprocessing, neural network modeling, and performance evaluation, we create a model that achieves a **98.25%** accuracy in detecting malignancies.
 
 ### Dataset Overview
-::::: columns 
-::: {.column width="50%"}
-The Breast Cancer Wisconsin dataset is available in sklearn.datasets and contains **30** numerical features describing tumor properties.  
 
-The target variable consists of:  
-&nbsp;&nbsp;  -&nbsp;&nbsp;  0&nbsp;&nbsp;:&nbsp;&nbsp; Benign tumors (non-cancerous)  
-&nbsp;&nbsp;  -&nbsp;&nbsp;  1&nbsp;&nbsp;:&nbsp;&nbsp; Malignant tumors (cancerous)
+::::: columns
+::: {.column width="50%"}
+The Breast Cancer Wisconsin dataset is available in sklearn.datasets and contains **30** numerical features describing tumor properties.
+
+The target variable consists of:\
+   -   0  :   Benign tumors (non-cancerous)\
+   -   1  :   Malignant tumors (cancerous)
 :::
-::: {.column width="40%"} 
+
+::: {.column width="40%"}
 ![](distribution.png)
 :::
 :::::
+
 Let's start by loading the dataset:
 
 ```{python}
@@ -246,8 +250,8 @@ print(f"Test accuracy: {test_acc:.5f}%")
 
 To optimize the model’s performance, I experimented with different hyperparameters values:
 
--   **Learning Rate** = **0.001** + **Neurons** = **8**  
-Training takes longer to reach the same accuracy (98.25%) and between 100 and 300 epochs it shows unstable behavior, a significant drop in accuracy occurs. This suggests that the model may experience optimization challenges - due to saddle point, poor local minima, momentum issues - before recovering.
+-   **Learning Rate** = **0.001** + **Neurons** = **8**\
+    Training takes longer to reach the same accuracy (98.25%) and between 100 and 300 epochs it shows unstable behavior, a significant drop in accuracy occurs. This suggests that the model may experience optimization challenges - due to saddle point, poor local minima, momentum issues - before recovering.
 
 ::::: columns
 ::: {.column width="50%"}
@@ -259,26 +263,27 @@ Training takes longer to reach the same accuracy (98.25%) and between 100 and 30
 :::
 :::::
 
--   **Learning Rate** = **0.01** + **Neurons** = **9**  
-The model converges faster (due to a higher learning rate - 0.01), but around epoch 250, overfitting occurs, as validation accuracy stagnates ( and then proceedes to decline) while training accuracy continues increasing. This suggests that the model has learned the training data too well - including the noise - and generalizes worse on unseen data.
+-   **Learning Rate** = **0.01** + **Neurons** = **9**\
+    The model converges faster (due to a higher learning rate - 0.01), but around epoch 250, overfitting occurs, as validation accuracy stagnates ( and then proceedes to decline) while training accuracy continues increasing. This suggests that the model has learned the training data too well - including the noise - and generalizes worse on unseen data.
 
-::::: columns 
-::: {.column width="50%"} 
-![](Acc_N9_lr-0.01.png) 
-::: 
+::::: columns
+::: {.column width="50%"}
+![](Acc_N9_lr-0.01.png)
+:::
 
-::: {.column width="50%"} 
-![](Loss_N9_lr-0.01.png) 
-::: 
+::: {.column width="50%"}
+![](Loss_N9_lr-0.01.png)
+:::
 :::::
 
-### Conclusion 
+### Conclusion
+
 This post highlights the applications of machine learning in medicine, demonstrating how deep learning can assist in early **breast cancer detection**. While this model is relatively simple, it serves as a great example of **binary classification**, where the goal is to distinguish between two categories: benign and malignant tumors.
 
-Even though the model achieves a high accuracy of **98.25%**, there are several ways to improve, such as:  
-- **Hyperparameter tuning**: optimizing learning rates, batch sizes (if using a larger dataset) and architectures for better performance.  
-- Using more complex models: implementing Convolutional Neural Networks (**CNNs**) for image-based cancer detection.   
-- **Expanding the dataset**: including more diverse patient demographics to improve real-world generalization.  
+Even though the model achieves a high accuracy of **98.25%**, there are several ways to improve, such as:\
+- **Hyperparameter tuning**: optimizing learning rates, batch sizes (if using a larger dataset) and architectures for better performance.\
+- Using more complex models: implementing Convolutional Neural Networks (**CNNs**) for image-based cancer detection.\
+- **Expanding the dataset**: including more diverse patient demographics to improve real-world generalization.
 
 As machine learning continues to evolve, models like this can contribute to early disease detection, improving patient outcomes and supporting medical professionals in their decision-making.
 
