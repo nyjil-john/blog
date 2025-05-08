@@ -1,6 +1,6 @@
 ---
 toc: false
-image: temporary.JPG
+image: profile.jpg
 about: 
   template: jolla
   links:
