@@ -16,6 +16,7 @@ Radioactive decay follows an exponential curve, but we can apply logarithmic tra
 ::::: columns
 ::: {.column width="60%"}
 ### The Formula
+
 Exponential form: $A(t) = A_0 \cdot e^{-\lambda t}$
 
 After applying natural logarithm: $\ln(A) = \ln(A_0) - \lambda t$

@@ -225,7 +225,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>Let’s start by loading the dataset:</p>
-<div id="909a9963" class="cell" data-execution_count="1">
+<div id="df816b7e" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> load_breast_cancer</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>dataset <span class="op">=</span> load_breast_cancer()</span>
@@ -236,14 +236,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>To visualize the data we convert it to Pandas DataFrame:</p>
-<div id="c774255b" class="cell" data-execution_count="2">
+<div id="5808d4cf" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>dataf <span class="op">=</span> pd.DataFrame(dataset.data, columns<span class="op">=</span>dataset.feature_names)</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>dataf[<span class="st">'target'</span>] <span class="op">=</span> dataset.target</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Let’s inspect a subset of the data:</p>
-<div id="2bbb26c5" class="cell" data-execution_count="3">
+<div id="3b71e67f" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>dataf[<span class="dv">10</span>:<span class="dv">21</span>]  <span class="co"># Showing samples 10 to 20</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># in this segment only the samples 19 and 20 are malignant</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
@@ -555,7 +555,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="splitting-the-dataset" class="level4">
 <h4 class="anchored" data-anchor-id="splitting-the-dataset">1. Splitting the Dataset</h4>
 <p>Splitting into training (70%), validation (20%) and test (10%) sets:</p>
-<div id="c322bc8e" class="cell" data-execution_count="4">
+<div id="5ab78434" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>X_train, X_rem, y_train, y_rem <span class="op">=</span> train_test_split(X, y, train_size<span class="op">=</span><span class="fl">0.7</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
@@ -565,7 +565,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="feature-scaling" class="level4">
 <h4 class="anchored" data-anchor-id="feature-scaling">2. Feature Scaling</h4>
 <p>To improve model training performance, we normalize the features using MinMaxScaler:</p>
-<div id="d6a7368a" class="cell" data-execution_count="5">
+<div id="7b895688" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> MinMaxScaler</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>scaler <span class="op">=</span> MinMaxScaler()</span>
@@ -576,7 +576,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="converting-to-pytorch-tensors" class="level4">
 <h4 class="anchored" data-anchor-id="converting-to-pytorch-tensors">3. Converting to PyTorch Tensors</h4>
-<div id="30b1e632" class="cell" data-execution_count="6">
+<div id="57bf99a9" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>X_train, y_train <span class="op">=</span> torch.tensor(X_train, dtype<span class="op">=</span>torch.float32), torch.tensor(y_train, dtype<span class="op">=</span>torch.float32)</span>
@@ -591,7 +591,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="creating-an-accuracy-function" class="level3">
 <h3 class="anchored" data-anchor-id="creating-an-accuracy-function">Creating an Accuracy Function</h3>
-<div id="c247fe4a" class="cell" data-execution_count="7">
+<div id="f556184d" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> accuracy_fn(y_true, y_pred):</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  correct <span class="op">=</span> torch.eq(y_true, y_pred).<span class="bu">sum</span>().item() <span class="co"># calculates the total number of correct predictions</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  acc <span class="op">=</span> (correct <span class="op">/</span> <span class="bu">len</span>(y_pred)) <span class="op">*</span> <span class="dv">100</span></span>
@@ -601,7 +601,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="building-the-neural-network" class="level3">
 <h3 class="anchored" data-anchor-id="building-the-neural-network">Building the Neural Network</h3>
 <p>Creating the Model Class:</p>
-<div id="1bb2b8c3" class="cell" data-execution_count="8">
+<div id="18a84cf1" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torch <span class="im">import</span> nn</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>torch.manual_seed(<span class="dv">42</span>)</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -624,14 +624,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.linear_layer_stack(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Setting up the Model:</p>
-<div id="3ca57d18" class="cell" data-execution_count="9">
+<div id="b6661800" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>device <span class="op">=</span> <span class="st">"cuda"</span> <span class="cf">if</span> torch.cuda.is_available() <span class="cf">else</span> <span class="st">"cpu"</span> <span class="co"># device agnostic code</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>BC_Model_V0 <span class="op">=</span> BreastCancerModel().to(device) <span class="co"># initializing the model</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="loss-function-and-optimizer" class="level3">
 <h3 class="anchored" data-anchor-id="loss-function-and-optimizer">Loss Function and Optimizer:</h3>
-<div id="beb70724" class="cell" data-execution_count="10">
+<div id="ffa124f7" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>torch.manual_seed(<span class="dv">42</span>)</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>loss_fn <span class="op">=</span> nn.BCEWithLogitsLoss() <span class="co"># Sigmoid built-in (better than: .BCELoss + Sigmoid)</span></span>
@@ -639,7 +639,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>                            lr <span class="op">=</span> <span class="fl">0.001</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Moving data to GPU (if available):</p>
-<div id="198e482e" class="cell" data-execution_count="11">
+<div id="a234f44c" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># data to GPU for faster computation</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>X_train, y_train <span class="op">=</span> X_train.to(device), y_train.to(device)</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>X_valid, y_valid <span class="op">=</span> X_valid.to(device), y_valid.to(device)</span>
@@ -648,7 +648,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="training" class="level3">
 <h3 class="anchored" data-anchor-id="training">Training</h3>
-<div id="c9d67177" class="cell" data-execution_count="12">
+<div id="75d84e61" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>torch.manual_seed(<span class="dv">42</span>)</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>epochs <span class="op">=</span> <span class="dv">500</span></span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -705,7 +705,7 @@ Epoch: 500 | Loss: 0.10571, Accuracy: 97.99% | Validation Loss: 0.08593, Validat
 </div>
 <p>Let’s plot the Accuracy and the Loss functions.</p>
 <p>The Accuracy:</p>
-<div id="3af22900" class="cell" data-execution_count="13">
+<div id="2228b8e9" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">9</span>, <span class="dv">6</span>))</span>
@@ -725,7 +725,7 @@ Epoch: 500 | Loss: 0.10571, Accuracy: 97.99% | Validation Loss: 0.08593, Validat
 </div>
 </div>
 <p>The Loss:</p>
-<div id="b8431ca9" class="cell" data-execution_count="14">
+<div id="8320d476" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">9</span>, <span class="dv">6</span>))</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>plt.plot(train_losses, label<span class="op">=</span><span class="st">"Training Loss"</span>, color<span class="op">=</span><span class="st">'green'</span>)</span>
@@ -748,7 +748,7 @@ Epoch: 500 | Loss: 0.10571, Accuracy: 97.99% | Validation Loss: 0.08593, Validat
 <section id="evaluating-the-model" class="level3">
 <h3 class="anchored" data-anchor-id="evaluating-the-model">Evaluating the Model</h3>
 <p>Let’s use the final 10% of the samples to see how the model performs on unseen data:</p>
-<div id="f490d803" class="cell" data-execution_count="15">
+<div id="f63604c1" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> torch.inference_mode():</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  BC_Model_V0.<span class="bu">eval</span>()</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  test_logits <span class="op">=</span> BC_Model_V0(X_test).squeeze()</span>
