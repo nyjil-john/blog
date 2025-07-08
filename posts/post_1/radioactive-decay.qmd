@@ -32,8 +32,8 @@ We now have a linear relationship to work with.
 Let's start with importing all the necessary libraries:
 
 ```{python}
-import torch
-from torch import nn
+import torch 
+from torch import nn 
 import matplotlib.pyplot as plt
 ```
 
