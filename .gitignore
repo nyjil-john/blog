@@ -14,4 +14,4 @@ venv/
 *.Rhistory
 .Rproj.user
 # draft
-posts/post_3
+/posts/post_3
